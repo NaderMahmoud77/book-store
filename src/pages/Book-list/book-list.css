@@ -1,0 +1,52 @@
+.book-single h2 {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  font-weight: 600;
+  line-height: 1.4;
+}
+.book-single .author-book {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-block: 10px;
+}
+.book-single .rating {
+  margin-block: 10px;
+}
+.book-single .price-sale {
+  margin-block: 10px;
+}
+.book-single .price-sale .price {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-right: 7px;
+}
+.book-single .price-sale .sale {
+  color: #999;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-block: 40px;
+}
+
+:root .MuiPaginationItem-root {
+  color: #2f2f2f !important;
+  border: 1px solid #ccc !important;
+  background-color: #edebe4 !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+:root .MuiPaginationItem-root:hover {
+  background-color: #d9d5cf !important;
+}
+
+:root .MuiPaginationItem-root.Mui-selected {
+  background-color: #2f2f2f !important;
+  color: #fff !important;
+  border-color: #2f2f2f !important;
+}

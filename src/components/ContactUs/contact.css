@@ -1,0 +1,129 @@
+.contact {
+  margin-top: 60px;
+  padding-block: 60px;
+  background-color: var(--secondary-color);
+}
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-block: 60px;
+}
+
+.cont {
+  flex: 1;
+  min-width: 300px;
+}
+
+.cont {
+  background-color: #fdfdfd;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px;
+}
+
+.cont .title-contact {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #2f2f2f;
+}
+
+.cont form div {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.cont form input,
+.cont form textarea {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: box-shadow 0.5s;
+  background-color: #fff;
+  color: #2f2f2f;
+}
+
+.cont form input:focus,
+.cont form textarea:focus {
+  border: none;
+  box-shadow: 0 0 0 3px rgba(160, 148, 132, 0.25);
+  outline: none;
+}
+
+.cont form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.cont .send,
+.cont .sending {
+  margin-top: 1rem;
+  padding: 0.5rem ;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.cont .send {
+  background-color: #5e5244;
+  color: white;
+}
+.cont .send:hover {
+  background-color: #3d352d;
+}
+.cont .sending {
+  background-color: #a9a29a;
+}
+.cont .send .icon {
+  margin-right: 8px;
+}
+
+/* Map*/
+.contact-map {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.location-time-phone-emial {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.location-time,
+.phone-emial {
+  min-width: 220px;
+}
+
+.location-time p,
+.phone-emial p {
+  margin: 0.7rem 0;
+  font-size: 1rem;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.location-time strong,
+.phone-emial strong,
+.mapicon {
+  color: #2f2f2f;
+}

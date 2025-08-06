@@ -1,0 +1,18 @@
+.all-books {
+  padding-block: 90px;
+}
+.book-list {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-block: 60px;
+}
+
+/*  */
+/* Style Single Book In File App.css*/
+/* Style Banner Book In File App.css*/
+/* Style next-book in file App.css */
+/* Style input filter in file App.css */
+/*  */

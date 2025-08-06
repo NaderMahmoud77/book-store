@@ -1,0 +1,24 @@
+.client-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 90px;
+  margin-top: 60px;
+  background-color: var(--secondary-color);
+  flex-wrap: wrap;
+}
+.client-holder img {
+  transition: 500ms;
+}
+.client-holder img:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media */
+@media (max-width: 768px) {
+  .client-holder {
+    padding-block: 60px;
+    margin-block: 30px;
+    justify-content: space-around;
+  }
+}

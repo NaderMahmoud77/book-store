@@ -1,0 +1,50 @@
+.feature-books {
+  padding-block: 90px;
+}
+
+.feature-books-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding-block: 60px;
+}
+/* Single Book */
+
+/*  */
+/* Style Banner Book In File App.css */
+/* Style Next Book In File App.css */
+/*  */
+
+.feature-books-list .feature-book-item h3 {
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+.feature-books-list .feature-book-item p {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-block: 10px;
+}
+.feature-books-list .feature-book-item .price-offer {
+  margin-block: 10px;
+}
+.feature-books-list .feature-book-item .price {
+  color: #999;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+.feature-books-list .feature-book-item .offer-price {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-right: 7px;
+}
+
+/* feature-modal */
+/*  */
+/* Style Modal In File App.css */
+/*  */
+
+/*  */
+/* Style fancy-divider in file App.css */
+/*  */
