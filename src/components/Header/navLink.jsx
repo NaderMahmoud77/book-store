@@ -32,7 +32,7 @@ export let NaveLinks = ({ value, closeDrawer }) => {
       <ul>
         <li className="active-link">
           <span className="separator"></span>
-          <a href="/">Home</a>
+          <a href="#">Home</a>
         </li>
         <li>
           <span className="separator"></span>
