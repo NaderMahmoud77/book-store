@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 // Mui
 import Tooltip from "@mui/material/Tooltip";
 
+import { Link } from "react-scroll";
+
 /////////////////
 export let NaveLinks = ({ value, closeDrawer }) => {
   let [selectedPage, setSelectedPage] = useState("");
@@ -52,18 +54,24 @@ export let NaveLinks = ({ value, closeDrawer }) => {
             </a>
           </Tooltip>
         </li>
-        <li>
-          <span className="separator"></span>
-          <a href="#feature">Featured</a>
-        </li>
-        <li>
-          <span className="separator"></span>
-          <a href="#offer">Offer</a>
-        </li>
-        <li>
-          <span className="separator"></span>
-          <a href="#contact">Contact</a>
-        </li>
+        <Link to="feature" smooth={true} duration={500} offset={-80}>
+          <li>
+            <span className="separator"></span>
+            Featured
+          </li>
+        </Link>
+        <Link to="offer" smooth={true} duration={500} offset={-80}>
+          <li>
+            <span className="separator"></span>
+            Offer
+          </li>
+        </Link>
+        <Link to="contact" smooth={true} duration={500} offset={-80}>
+          <li>
+            <span className="separator"></span>
+            Contact
+          </li>
+        </Link>
       </ul>
     </nav>
   );

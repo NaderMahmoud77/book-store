@@ -85,7 +85,7 @@ export function Cart() {
         <div className="not">
           <h2 className="not-found">Oops! Your shopping cart is empty.</h2>
           <img
-            src="/images/BestBook/not-found-cart.jpg"
+            src={process.env.PUBLIC_URL + "/images/BestBook/not-found-cart.jpg"}
             alt=""
             className="image-not-found"
           />

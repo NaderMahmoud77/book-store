@@ -46,10 +46,7 @@ function Footer() {
           animate={isInView ? "visible" : "hidden"}
           custom={0.2}
         >
-          <img
-            src={process.env.PUBLIC_URL + "./images/Clint/client-image3.png"}
-            alt="client"
-          />
+          <img src="./images/Clint/client-image3.png" alt="client" />
           <div className="social-footer">
             <FacebookIcon className="icon" />
             <InstagramIcon className="icon" />

@@ -14,7 +14,10 @@ export let BestBook = () => {
           transition={{ duration: 0.9 }}
           viewport={{ amount: 0.3 }}
         >
-          <img src="/images/BestBook/single-image.jpg" alt="" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/BestBook/single-image.jpg"}
+            alt=""
+          />
         </motion.div>
 
         <motion.div
@@ -32,9 +35,7 @@ export let BestBook = () => {
             feugiat amet, libero ipsum enim pharetra hac.
           </span>
           <div className="book-best-price">$45.00</div>
-          <Button className="the-best">
-            The Best
-          </Button>
+          <Button className="the-best">The Best</Button>
         </motion.div>
       </div>
     </div>

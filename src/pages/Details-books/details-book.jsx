@@ -10,6 +10,7 @@ import { BookDetailsCard } from "./book-details-card";
 // redux
 import { useDispatch } from "react-redux";
 import { SnackActions } from "../../Redux-Slice/snack-slice";
+import { useEffect } from "react";
 
 export function DetailsBooks() {
   let { id } = useParams();
@@ -28,6 +29,10 @@ export function DetailsBooks() {
       dispatch(SnackActions.hidSnack());
     }, 3000);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   let allBooks = [...books, ...featureOnBook, ...offerOnBook];
 
