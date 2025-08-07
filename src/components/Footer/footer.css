@@ -29,7 +29,9 @@
 .box-1 .footer-text {
   letter-spacing: 1;
 }
-
+.box-2{
+  cursor: pointer;
+}
 .box-2 h3{
     color: #fff !important;
 }
@@ -56,6 +58,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  
 }
 .box-3 img {
   background-color: var(--main-color);

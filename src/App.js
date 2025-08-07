@@ -18,7 +18,7 @@ function App() {
  
 
   return (
-    <>
+    <div id="home">
       <Header />
       <Routes>
         <Route path="/" element={< HomePage/>} />
@@ -30,7 +30,7 @@ function App() {
       </Routes>
       <Footer/>
       <ButtonScrollToTop/>
-    </>
+    </div>
   );
 }
 

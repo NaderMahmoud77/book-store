@@ -76,7 +76,7 @@ function Footer() {
           custom={0.4}
         >
           <h3>Quick Link</h3>
-          <Link to="feature" smooth={true} duration={500} offset={-80}>
+          <Link to="home" smooth={true} duration={500} offset={-80}>
             <DoubleArrowIcon /> <span>Home</span>
           </Link>
           <Link to="feature" smooth={true} duration={500} offset={-80}>
