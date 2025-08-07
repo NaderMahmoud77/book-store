@@ -67,28 +67,22 @@ export function OfferBooks() {
 
   const initialSlide = Math.floor(offerOnBook.length / 2);
 
-  // Show Hint Swipe to explore
-  const [showHint, setShowHint] = useState(true);
-  const sliderContainerRef = useRef();
-
   return (
     <div className="offer-books" id="offer">
       <p className="sub-title">Grab your opportunity</p>
       <h1 className="title">Books with offer</h1>
 
       {/* Arrow */}
-      {showHint && (
-        <div className="swipe-hint-container">
-          <div className="swipe-hint">
-            <span className="swipe-arrow">←</span>
-            <span className="swipe-text">Swipe to explore</span>
-            <span className="swipe-arrow">→</span>
-          </div>
+
+      <div className="swipe-hint-container">
+        <div className="swipe-hint">
+          <span className="swipe-arrow">←</span>
+          <span className="swipe-text">Swipe to explore</span>
+          <span className="swipe-arrow">→</span>
         </div>
-      )}
+      </div>
 
       <Swiper
-        ref={sliderContainerRef}
         effect="coverflow"
         grabCursor
         centeredSlides
@@ -101,8 +95,6 @@ export function OfferBooks() {
         modules={[EffectCoverflow, Pagination]}
         breakpoints={breakpoints}
         className="book-slider mySwiper"
-        onTouchStart={() => setShowHint(false)}
-        onMouseDown={() => setShowHint(false)} 
       >
         {offerOnBook.map((b, i) => (
           <SwiperSlide key={b.id}>
