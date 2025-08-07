@@ -105,6 +105,7 @@ export function BookDetailsCard({ book, showSnack }) {
             onChange={(e) => setQuantity(e.target.value)}
             size="small"
             className="text-field"
+            
           />
           <AddCartBtn addTocart={addTocart} showSnack={showSnack} />
         </div>

@@ -60,13 +60,12 @@
 }
 
 .the-best {
-  background-color: var(--main-color) !important;
   color: var(--text-color) !important;
   margin-top: 10px !important;
   font-weight: 600 !important;
   transition: all 0.3s ease-in-out !important;
   text-transform: capitalize !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
 }
 .the-best:hover {
   background-color: var(--text-color) !important;
@@ -89,7 +88,7 @@
   }
   .best-banner {
     width: auto;
-    height: 500px;
+    height: 420px;
     margin-inline: auto;
   }
   .book-best-price {

@@ -9,7 +9,6 @@ import CloseTwoToneIcon from "@mui/icons-material/CloseTwoTone";
 import { NaveLinks } from "./navLink";
 
 export function ToggleBar() {
-  
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (open) => (event) => {
@@ -32,12 +31,15 @@ export function ToggleBar() {
     >
       <List>
         <div className="logo-toggle">
-          <img src="/images/Clint/client-image3.png" alt="logo" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/Clint/client-image3.png`}
+            alt="logo"
+          />
         </div>
         <div className="close-icon">
           <CloseTwoToneIcon />
         </div>
-        <NaveLinks value="showToggle"  closeDrawer={() => setOpen(false)} />
+        <NaveLinks value="showToggle" closeDrawer={() => setOpen(false)} />
       </List>
     </Box>
   );

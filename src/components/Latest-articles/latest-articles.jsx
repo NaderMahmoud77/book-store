@@ -8,8 +8,8 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Button, Tooltip } from "@mui/material";
 import { Link } from "react-router-dom";
 // Animation
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+// import { useRef } from "react";
 
 const articles = [
   {
@@ -19,7 +19,7 @@ const articles = [
     text: "inspiration",
   },
   {
-    img:process.env.PUBLIC_URL + "/images/LatestArticles/post-img2.jpg",
+    img: process.env.PUBLIC_URL + "/images/LatestArticles/post-img2.jpg",
     date: "Feb 14, 2025",
     title: "Reading books always makes the moments happy",
     text: "inspiration",
@@ -33,8 +33,8 @@ const articles = [
 ];
 
 export default function LatestArticles() {
-  const ref = useRef();
-  const isInView = useInView(ref, { amount: 0.2 });
+  // const ref = useRef();
+  // const isInView = useInView(ref, { amount: 0.2 });
 
   return (
     <section className="article container" id="latest">
@@ -46,14 +46,9 @@ export default function LatestArticles() {
             <motion.div
               className="article-item"
               key={idx}
-              ref={ref}
               initial={{ opacity: 0, y: 50 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-              transition={{
-                duration: 0.9,
-                delay: idx * 0.2,
-                ease: "easeOut",
-              }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: idx * 0.3 }}
             >
               <div className="banner">
                 <img src={article.img} alt={article.title} />

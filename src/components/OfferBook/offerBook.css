@@ -109,3 +109,47 @@
   transform: scale(1.4) rotate(45deg);
   opacity: 1;
 }
+
+
+/*  Swipe hint style */
+.swipe-hint-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.swipe-hint {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: opacity 0.3s ease;
+}
+
+.swipe-arrow {
+  animation: bounce 1s infinite alternate;
+}
+
+@media (min-width: 768px) {
+  .swipe-hint-container {
+    display: none;
+  }
+}
+
+/* Arrow animation */
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(6px);
+    opacity: 1;
+  }
+}

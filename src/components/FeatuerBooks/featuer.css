@@ -48,3 +48,13 @@
 /*  */
 /* Style fancy-divider in file App.css */
 /*  */
+
+@media (max-width: 767px) {
+  .feature-books {
+  padding-block-start: 50px;
+}
+.feature-books-list {
+  
+  padding-block-start: 10px;
+}
+}
