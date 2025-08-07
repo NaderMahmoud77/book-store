@@ -9,6 +9,7 @@ import LatestArticles from "../../components/Latest-articles/latest-articles";
 import { ContactUs } from "../../components/ContactUs/ContactUs";
 import CommentSection from "../../components/CommentClient/comment-client";
 export let HomePage = () => {
+  localStorage.clear()
   return (
     <div className="home-page">
       <Home />

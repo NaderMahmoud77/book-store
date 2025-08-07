@@ -10,6 +10,9 @@ import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
+import { Link } from "react-scroll";
+
+////////////////////
 function Footer() {
   const footerRef = useRef();
   const isInView = useInView(footerRef, { once: false, amount: 0.2 });
@@ -46,7 +49,11 @@ function Footer() {
           animate={isInView ? "visible" : "hidden"}
           custom={0.2}
         >
-          <img src="./images/Clint/client-image3.png" alt="client" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/Clint/client-image3.png`}
+            alt="client"
+          />
+
           <div className="social-footer">
             <FacebookIcon className="icon" />
             <InstagramIcon className="icon" />
@@ -69,21 +76,21 @@ function Footer() {
           custom={0.4}
         >
           <h3>Quick Link</h3>
-          <a href="/">
+          <Link to="feature" smooth={true} duration={500} offset={-80}>
             <DoubleArrowIcon /> <span>Home</span>
-          </a>
-          <a href="#feature">
+          </Link>
+          <Link to="feature" smooth={true} duration={500} offset={-80}>
             <DoubleArrowIcon /> <span>Feature</span>
-          </a>
-          <a href="#allBook">
+          </Link>
+          <Link to="allBook" smooth={true} duration={500} offset={-80}>
             <DoubleArrowIcon /> <span>All Book</span>
-          </a>
-          <a href="#offer">
+          </Link>
+          <Link to="offer" smooth={true} duration={500} offset={-80}>
             <DoubleArrowIcon /> <span>Offer Book</span>
-          </a>
-          <a href="#latest">
+          </Link>
+          <Link to="latest" smooth={true} duration={500} offset={-80}>
             <DoubleArrowIcon /> <span>Latest Articles</span>
-          </a>
+          </Link>
         </motion.div>
 
         {/* Box 3 */}
